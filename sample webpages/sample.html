@@ -161,6 +161,7 @@
             <br>
             <input type="submit" value="submit">
             <input type="reset" value="reset">
+            <button id="b1" onclick="open()">Click</button>
         </fieldset>
     </form> 
     <br>
@@ -231,9 +232,15 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script>
-        function validate() {
+        function validate() 
+        {
             alert("You tried to exit the page");
         }
+        function open()
+        {
+            alert("You tried to open a new tab");
+        }
+
     </script>
 </body>
 </html>
