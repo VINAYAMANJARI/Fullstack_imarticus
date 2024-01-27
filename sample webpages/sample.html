@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web page</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"rel="stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <style>
+        #h {
+            color: rgb(14, 221, 244);
+        }
+
+        .d1 {
+            border: 2px solid green;
+            background-color: aqua;
+            text-align: center;
+        }
+
+        body 
+        {
+            background-image: url("nature.jpg");
+            background-repeat: repeat-x;
+            background-color: aqua;
+        }
+
+        .d3 {
+            background-color: aqua;
+            border: 2px solid aqua;
+            color: black;
+        }
+
+        img {
+            position: absolute;
+            width: 200px;
+            right: 40px;
+            border: 1px solid green;
+        }
+
+        .required::after {
+            content: '*';
+            color: red;
+        }
+
+        #id1 {
+            position: absolute;
+            width: 200px;
+            left: 100px;
+            border: 1px solid green;
+            right: 300px;
+            top: 200px;
+            transition-duration: 0s;
+        }
+
+        #sp {
+            color: rgb(4, 10, 104);
+        }
+
+        #i1:hover {
+            transform: translate(200px, 200px);
+            transform: rotate(90deg, 90deg);
+            /* transform: matrix(1,60,0,2,0,0); translate,rotate,scale,skew */
+        }
+
+        .btn-close {
+            color: white;
+            position: absolute;
+            right: 20px;
+            font-size: 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- normal button- <button type="button" class="btn-close" aria-label="Close" onclick="validate()"></button> -->
+    <div data-bs-theme="dark">
+        <button type="button" class="btn-close" aria-label="Close" onclick="validate()"></button>
+        <button type="button" class="btn-close" disabled aria-label="Close" ></button>
+    </div>
+    <h1 id="h"><i><q>Beauty of Nature</q></i></h1>
+    <p class="p1" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, atque?</p>
+    <div class="d1">Lorem <u>ipsum</u> dolor sit amet.</div>
+    <div class="d2" style="color: white;">Lorem ipsum dolor sit amet.</div><br>
+    <br>
+    <div class="d3">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, distinctio.</li>
+    </div>
+    <div id="div1"><img src="tree.jpg" alt="tree"></div>
+    <br>
+    <div class="d4">
+        <li><mark>Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>. Similique minus <strong><u>laboriosam
+                        porro</u></strong> sit animi magni quis eveniet ex error id.</mark></li>
+    </div>
+    <br>
+    <!-- <video width="300px" src="ERROR EPIC_VEC.mp4" autoplay></video> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4XTsAAHW_Tc?si=KVTAHDRErowzuXXU"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <br>
+    <hr>
+    <a href="https://www.youtube.com/">Click here to watch amazing videos of nature</a>
+    <!-- <link rel="shortcut icon" href="favicon.ico" type=""> -->
+    <hr>
+    <br>
+    <br>
+    <form>
+        <fieldset>
+            <legend>User login</legend>
+            <img id="i1" src="admission.avif" alt="admission">
+            <label for="id1">Enter the name</label>
+            <input class="id1" type="text" placeholder="Name" required autofocus>
+            <br>
+            <br>
+            <label>Enter the <span id="sp">number</span></label>
+            <input class="id2" type="number" placeholder="number" required>
+            <br>
+            <br>
+            <label class="required">Enter the email id</label>
+            <input class="id3" type="email" placeholder="email@gmail.com" required>
+            <br>
+            <br>
+            <label class="required">Enter the password</label>
+            <input class="id4" type="password" placeholder="***" required>
+            <br>
+            <br>
+            Select Gender <br>
+            <input type="radio" name="gender" value="gender">Male <br>
+            <input type="radio" name="gender" value="gender">Female <br>
+            <input type="radio" name="gender" value="gender">Others <br>
+            <br>
+            Select a DOB
+            <input type="date">
+            <br>
+            <br>
+            Select course
+            <select id="s1">
+                <option value="" disabled>--select--</option>
+                <option value="">IT</option>
+                <option value="">CSE</option>
+                <option value="">ECE</option>
+            </select>
+            <br>
+            <br>
+            Enter the address <br>
+            <textarea></textarea>
+            <br>
+            <br>
+            Volume
+            <input type="range">
+            <br>
+            <br>
+            <input type="file" value="volume">
+            <br>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </fieldset>
+    </form> 
+    <br>
+    <br>
+    <nav>
+        Navigating buttons
+        <ol type="a">
+            <li>
+                <button> <a href="/bulb.html">Bulb</a></button>
+            </li>
+            <li><button id="b2">Refresh</button></li>
+            </ul>
+    </nav>
+    <hr>
+    <br>
+    <p><b>Course fee structure</b></p>
+    <caption><q>Fee table</q></caption>
+    <table border="1">
+       
+        <tr>
+            <th>Serialno.</th>
+            <th>Course name</th>
+            <th>Govt quota</th>
+            <th>Mngmt quota</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Information Technology</td>
+            <td>85400</td>
+            <td>132400</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Computer Science Engineering</td>
+            <td>85400</td>
+            <td>132400</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Electronic and Communication Engineering</td>
+            <td>75000</td>
+            <td>120000</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <p id="pd"><b>Connect with us through</b></p>
+    <br>
+    <div class="social-menu">
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <br>
+    <!-- End of code this script contains imports for social media icons   -->
+    <script src='https://kit.fontawesome.com/3b57a2a2a7.js'></script>
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <br>
+    <br>
+    <div> <b>&copy; copyrighted by VINAYAMANJARI</b></div>
+    <!-- code with mosh -- the ultimate redux course-- for fullstack course-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        function validate() {
+            alert("You tried to exit the page");
+        }
+    </script>
+</body>
+</html>
